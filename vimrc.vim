@@ -151,8 +151,8 @@ if has("win32")
     set rtp+=$VIM/vimfiles/bundle/Vundle.vim/
     call vundle#begin('$VIM/vimfiles/bundle')
 else
-    set rtp+=~/.vim/bundle/Vundle.vim/
-    call vundle#begin('~/.vim/bundle/')
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
 endif
 
 " 插件管理插件。
@@ -166,7 +166,7 @@ endif
 " :PluginInstall!                   更新所有插件
 " :PluginSearch                     搜索插件
 " :PluginClean!                     根据配置文件删除插件
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " VueJS 组件语法高亮
 Plugin 'posva/vim-vue'

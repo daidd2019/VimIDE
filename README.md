@@ -47,6 +47,9 @@ majutsushi/tagbar 插件依赖 ctags 来解析。可以从以下地址下载：
 YCM 插件需要编译之后才可以用，所以可能还需要安装一系统的编译工具：gcc、cmake 等。
 具体安装步骤可参考：[YCM安装](https://github.com/Valloric/YouCompleteMe#installation)。
 windows 比较麻烦，如果折腾不出来就算了。
+sudo apt install build-essential cmake python3-dev
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --go-completer
 
 #### vim-go
 vim-go 插件依赖一大堆 Go 程序，可以通过运行`:GoInstallBinaries`来自行安装，
@@ -89,7 +92,7 @@ cd vimfiles/bundle/
 mklink ultisnippets x:\xxx\VimIDE\ultisnippets
 
 # 安装 Vundle
-git clone https://github.com/gmarik/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git
 ```
 在 Gvim 中执行`:PluginInstall`命令安装其它插件。
 
@@ -104,7 +107,7 @@ ln -s ~/project/VimIDE/vimrc.vim  ~/.vimrc
 # 安装 Vundle
 mkdir ~/.vim/bundle/
 cd ~/.vim/bundle/
-git clone https://github.com/gmarik/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # 链接 ultisnippets 到 rtp
 ln -s ~/project/VimIDE/ultisnippets  ./ultisnippets
