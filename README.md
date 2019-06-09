@@ -4,7 +4,7 @@ VimIDE
 自用的一个 vim 配置文件，适用于`Go`与`PHP`语言环境。
 
 适用版本：
-windows/linux 下只通过 Gvim8 的测试。
+windows/linux 下只通过 vim8 的测试。
 macOS 下 vim8 或是对应版本的 macvim。
 
 ![screenshot](https://raw.github.com/caixw/VimIDE/master/images/screenshot.png)
@@ -62,7 +62,7 @@ airline 需要使用到这些字体，用于美化状态栏。
 linux/macOS：
 ```shell
 cd ~
-git clone github.com:powerline/fonts
+git clone https://github.com/powerline/fonts.git
 cd fonts
 ./install.sh
 ```
