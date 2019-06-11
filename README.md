@@ -32,6 +32,20 @@ macOS 下 vim8 或是对应版本的 macvim。
 - vim-fugitive：也依赖 git 才起作用；
 - vim-go：中的`:GoInstallBinaries`命令依赖`go get`，而`go get`依赖 git 和 mercurial；
 
+```vim-go 依赖
+mkdir $GOPATH/src/golang.org/x
+cd $GOPATH/src/golang.org/x
+git clone http://github.com/golang/tools
+git clone http://github.com/golang/lint
+git clone http://github.com/golang/sys
+git clone http://github.com/golang/net
+git clone https://github.com/golang/sync
+
+go install golang.org/x/sync/errgroup 
+go install golang.org/x/tools/cmd/gopls
+go install golang.org/x/tools/cmd/goimports
+```
+
 
 #### python
 UltiSnips 依赖 Python2 或是 Python3，若 vim 编译时是以 python/dyn 形式编译的，
