@@ -44,6 +44,16 @@ git clone https://github.com/golang/sync
 go install golang.org/x/sync/errgroup 
 go install golang.org/x/tools/cmd/gopls
 go install golang.org/x/tools/cmd/goimports
+
+编译vim 
+yum -y install ncurses-devel|
+./configure  --enable-python3interp=yes --with-python3-command=/usr/local/bin/python3
+ 
+ 
+编译python
+yum -y install libffi-devel
+./configure  --enable-shared
+
 ```
 
 
